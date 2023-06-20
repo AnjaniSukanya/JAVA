@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.Scanner;
+        class Cal
+        {
+            public static void main(String[] args)
+            {
+                Scanner obj = new Scanner(System.in);
+                System.out.println("Enter a :");
+                int a = obj.nextInt();
+                System.out.println("Enter b : ");
+                int b = obj.nextInt();
+                System.out.println("enter an option:");
+
+                    int ch = obj.nextInt();
+                    switch (ch) {
+                        case 1 :
+                                int c = a + b;
+                                System.out.println(c);
+                                break;
+
+                        case 2 : int d = a - b;
+                                System.out.println(d);
+                                break;
+                        case 3 :
+                            int e = a * b;
+                            System.out.println(e);
+                            break;
+                        case 4 :
+                            int f = a / b;
+                            System.out.println(f);
+                            break;
+                        case 5 :
+                            int g = a % b;
+                            System.out.println(g);
+                            break;
+                        default :
+                            System.out.println("Invalid Operator");
+                            break;
+                    }
+
+            }
+        }
